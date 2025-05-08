@@ -71,6 +71,28 @@ Response:
 }
 ```
 
+2. **Suggest Repurposing**
+Endpoint: /suggest-repurposing
+
+Method: POST
+
+Payload:
+```bash
+{
+  "triples": [["EGFR", "Gefitinib", "Lung Cancer"]],
+  "target_disease": "Lung Cancer"
+}
+```
+
+Response:
+```bash
+{
+  "suggestions": [
+    ["Gefitinib", "Other Disease"]
+  ]
+}
+```
+
 **📈 Future Enhancements**
 Integrate additional biomedical databases for enriched graph construction.
 
